@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+
+
+.intro {
+  background-color: black;
+  width: 400px;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  overflow: auto;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.intro a {
+  color: white;
+  margin: 16px;
+  padding: 5px 15px;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro a:hover{
+    border-left: 2px solid red;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu{
+    align-self: flex-start;
+}
+
+.link-area{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-box{
+    display: inline-block;
+    margin: 0.3rem;
+    font-size: xx-large;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro img {
+  width: 350px;
+  max-width: 500px;
 }
+
+.MainHome {
+  background-color: #334553;
+  margin-left:400px ;
+  padding: 5rem 0rem;
+}
+
+.Skills {
+  background-color: #334553;
+}
+
+.menu-icon{
+    display: none;
+}
+
+
+@media screen and (max-width:1400px) {
+    .intro{
+        width: 250px;
+        
+    }
+    .intro img{
+        width: 200px;
+    }
+    
+    .MainHome{
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .intro {
+      width: 100%;
+      height: auto;
+      position: relative;
+      flex-direction: row;
+      overflow: hidden;
+    }
+
+    .intro img{
+        width: 150px;
+    }
+
+    .link-area {
+        align-self: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .intro a {float: left;}
+    .MainHome {margin-left: 0;}
+    .contact-boxs{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width:650px) {
+    .link-area{
+        display: none;
+    }
+
+    .menu-icon{
+        display: inline;
+    }
+
+    .menu:hover .link-area{
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
+  
+  @media screen and (max-width: 400px) {
+    .intro a {
+      text-align: center;
+      float: none;
+    }
+  }
