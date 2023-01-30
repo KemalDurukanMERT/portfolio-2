@@ -48,7 +48,8 @@
 .MainHome {
   background-color: #334553;
   margin-left:400px ;
-  padding: 5rem 0rem;
+  padding: 5rem;
+  height: 100vh;
 }
 
 .Skills {
@@ -94,7 +95,8 @@
     }
 
     .intro a {float: left;}
-    .MainHome {margin-left: 0;}
+    .MainHome {margin-left: 0;
+    padding: 0rem 1rem;}
     .contact-boxs{
         display: none;
     }
