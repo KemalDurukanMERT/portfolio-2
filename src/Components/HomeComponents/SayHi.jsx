@@ -5,7 +5,7 @@ import resume from "../../Data/Kemal Durukan MERT Resume.docx";
 
 const SayHi = () => {
   return (
-    <div className="sayhi">
+    <div className="sayhi" id="sayhi">
       <div className="left">
         <div className="hello text-danger fs-5">Hi, I'm</div>
         <div className="name fs-1 fw-bold">

@@ -24,6 +24,11 @@
     color: white;
 }
 
+.intro a.active{
+  border-left: 2px solid red;
+  color: white;
+}
+
 .menu{
     align-self: flex-start;
 }

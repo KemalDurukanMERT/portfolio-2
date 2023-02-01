@@ -15,8 +15,9 @@ const Intro = () => {
           <div className="menu-icon">
             <AiOutlineMenu />
           </div>
+          
           <div className="link-area">
-            <a href="#sayhi">Home</a>
+            <a href="#sayhi" >Home</a>
             <a href="#about">About</a>
             <a href="#resume">Resume</a>
             <a href="#projects">Projects</a>
