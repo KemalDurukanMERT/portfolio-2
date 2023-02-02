@@ -2,7 +2,7 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className="resume p-5" id="resume">
+    <div className="resume" id="resume">
       <div className="resume-header fs-1 fw-bold">Resume</div>
       <div className="line border border-danger"></div>
       <div className="subtitle text-secondary fs-4">Education & Experience</div>

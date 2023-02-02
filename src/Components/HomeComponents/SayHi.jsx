@@ -15,7 +15,7 @@ const SayHi = () => {
         <div className="title text-dark mb-3">Full Stack Developer</div>
         <div className="buttons d-flex flex-wrap gap-1">
           <Button variant="danger">
-            <a href={resume} target="_blank">
+            <a href={resume} target="_blank" rel="noreferrer">
               Download Resume
             </a>
           </Button>
