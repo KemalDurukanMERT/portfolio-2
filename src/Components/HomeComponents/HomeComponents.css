@@ -116,6 +116,44 @@
 }
 
 
+.certificate-area{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;;
+  gap: 1rem;
+}
+.certificate-cart{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  padding-right: 0.5rem;
+  width: 48%;
+  border-radius: 20px;
+}
+
+.certificate-cart a{
+  text-decoration: none;
+  color: white;
+}
+
+.certificate-logo{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+
+.certificate-logo img{
+  max-width: 100%;
+  min-width: 90px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+
 @media screen and (max-width: 1000px) {
   .education, .experience{
     width: 100%;

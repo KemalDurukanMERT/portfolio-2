@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "../../Assets/ibm-logo-white.png";
 const Resume = () => {
   return (
     <div className="resume" id="resume">
@@ -80,6 +80,47 @@ const Resume = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="certificates mt-5">
+        <div className="line border border-danger"></div>
+        <div className="certificates-header fs-4 text-secondary">
+          Certificates
+        </div>
+        <div className="certificate-area">
+          <div className="certificate-cart bg-secondary">
+            <div className="certificate-logo bg-dark">
+              <img src={logo} alt="" />
+            </div>
+            <div className="certificate-title">
+              <a href="https://courses.edx.org/certificates/151a403b8db94597b8689ca0130c0e12">
+                Cloud Development with HTML, CSS and JavaScript
+              </a>
+            </div>
+          </div>
+          <div className="certificate-cart bg-secondary">
+            <div className="certificate-logo bg-dark">
+              <img src={logo} alt="" />
+            </div>
+            <div className="certificate-title">
+              <a href="https://courses.edx.org/certificates/14e2c4970b644c7394e4714c84429244">
+                Python for Data Science
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="languages mt-5">
+        <div className="line border border-danger"></div>
+        <div className="languages-header fs-4 text-secondary">Languages</div>
+        <div className="language-area">
+          <div className="language-cart">
+            Turkish
+            <span>
+              <i>Native</i>
+            </span>
+          </div>
+          <div className="language-cart">English<span><i>Professional Working Profeciency</i></span></div>
         </div>
       </div>
     </div>
