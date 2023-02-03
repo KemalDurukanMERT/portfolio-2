@@ -13,25 +13,31 @@
 $color-black: hsl(0, 0%, 5%);
 $color-color: hsl(0, 0%, 100%);
 
+$color-javascript: hsl(60, 100%, 60%);
 $color-html: hsl(15, 100%, 60%);
 $color-css: hsl(200, 100%, 60%);
-$color-scss: hsl(300, 100%, 60%);
-$color-js: hsl(60, 100%, 60%);
-$color-ts: hsl(220, 100%, 60%);
-$color-node: hsl(110, 100%, 60%);
+$color-python: hsl(220, 100%, 60%);
 $color-react: hsl(180, 100%, 60%);
-$color-angular: hsl(0, 100%, 60%);
-$color-vue: hsl(145, 100%, 60%);
+$color-redux: hsl(110, 100%, 60%);
+$color-sass: hsl(300, 100%, 60%);
+$color-bootstrap: hsl(0, 100%, 60%);
+$color-linux: hsl(145, 100%, 60%);
+$color-postgresql: hsl(110, 100%, 60%);
+$color-git: hsl(220, 100%, 60%);
+$color-github: hsl(300, 100%, 60%);
 
+$porcent-javascript: 90;
 $porcent-html: 95;
 $porcent-css: 85;
-$porcent-scss: 70;
-$porcent-js: 80;
-$porcent-ts: 55;
-$porcent-node: 30;
-$porcent-react: 12;
-$porcent-angular: 5;
-$porcent-vue: 2;
+$porcent-python: 90;
+$porcent-react: 80;
+$porcent-redux: 75;
+$porcent-sass: 75;
+$porcent-bootstrap: 95;
+$porcent-linux: 70;
+$porcent-postgresql: 70;
+$porcent-git: 70;
+$porcent-github: 90;
 
 @function strokeDashoffset($num) {
   @return math.div(440 * (100-$num), 100);
@@ -71,6 +77,7 @@ $porcent-vue: 2;
   width: 100%;
   height: 100%;
   background-color: #235758;
+  border-radius: 50%;
 }
 
 .progressbar__svg-circle {
@@ -86,32 +93,41 @@ $porcent-vue: 2;
 }
 
 .shadow {
+  &-javascript {
+    filter: drop-shadow(0 0 5px $color-javascript);
+  }
   &-html {
     filter: drop-shadow(0 0 5px $color-html);
   }
   &-css {
     filter: drop-shadow(0 0 5px $color-css);
   }
-  &-scss {
-    filter: drop-shadow(0 0 5px $color-scss);
-  }
-  &-js {
-    filter: drop-shadow(0 0 5px $color-js);
-  }
-  &-ts {
-    filter: drop-shadow(0 0 5px $color-ts);
-  }
-  &-node {
-    filter: drop-shadow(0 0 5px $color-node);
+  &-python {
+    filter: drop-shadow(0 0 5px $color-css);
   }
   &-react {
-    filter: drop-shadow(0 0 5px $color-react);
+    filter: drop-shadow(0 0 5px $color-redux);
   }
-  &-angular {
-    filter: drop-shadow(0 0 5px $color-angular);
+  &-redux {
+    filter: drop-shadow(0 0 5px $color-redux);
   }
-  &-vue {
-    filter: drop-shadow(0 0 5px $color-vue);
+  &-sass {
+    filter: drop-shadow(0 0 5px $color-sass);
+  }
+  &-bootstrap {
+    filter: drop-shadow(0 0 5px $color-bootstrap);
+  }
+  &-linux {
+    filter: drop-shadow(0 0 5px $color-linux);
+  }
+  &-git {
+    filter: drop-shadow(0 0 5px $color-git);
+  }
+  &-github {
+    filter: drop-shadow(0 0 5px $color-github);
+  }
+  &-postgresql {
+    filter: drop-shadow(0 0 5px $color-postgresql);
   }
 }
 
@@ -141,32 +157,41 @@ $porcent-vue: 2;
     border-radius: 50%;
   }
   .circle {
+    &-javascript {
+      animation: anim_circle-javascript 1s ease-in-out forwards;
+    }
     &-html {
       animation: anim_circle-html 1s ease-in-out forwards;
     }
     &-css {
       animation: anim_circle-css 1s ease-in-out forwards;
     }
-    &-scss {
-      animation: anim_circle-scss 1s ease-in-out forwards;
-    }
-    &-js {
-      animation: anim_circle-js 1s ease-in-out forwards;
-    }
-    &-ts {
-      animation: anim_circle-ts 1s ease-in-out forwards;
-    }
-    &-node {
-      animation: anim_circle-node 1s ease-in-out forwards;
+    &-python {
+      animation: anim_circle-python 1s ease-in-out forwards;
     }
     &-react {
       animation: anim_circle-react 1s ease-in-out forwards;
     }
-    &-angular {
-      animation: anim_circle-angular 1s ease-in-out forwards;
+    &-redux {
+      animation: anim_circle-redux 1s ease-in-out forwards;
     }
-    &-vue {
-      animation: anim_circle-vue 1s ease-in-out forwards;
+    &-sass {
+      animation: anim_circle-sass 1s ease-in-out forwards;
+    }
+    &-bootstrap {
+      animation: anim_circle-bootstrap 1s ease-in-out forwards;
+    }
+    &-linux {
+      animation: anim_circle-linux 1s ease-in-out forwards;
+    }
+    &-postgresql {
+      animation: anim_circle-postgresql 1s ease-in-out forwards;
+    }
+    &-git {
+      animation: anim_circle-git 1s ease-in-out forwards;
+    }
+    &-github {
+      animation: anim_circle-github 1s ease-in-out forwards;
     }
   }
 }
@@ -185,6 +210,12 @@ $porcent-vue: 2;
 
 //  @keyframes
 
+@keyframes anim_circle-javascript {
+  to {
+    stroke-dashoffset: strokeDashoffset($porcent-javascript);
+  }
+}
+
 @keyframes anim_circle-html {
   to {
     stroke-dashoffset: strokeDashoffset($porcent-html);
@@ -197,27 +228,9 @@ $porcent-vue: 2;
   }
 }
 
-@keyframes anim_circle-scss {
+@keyframes anim_circle-python {
   to {
-    stroke-dashoffset: strokeDashoffset($porcent-scss);
-  }
-}
-
-@keyframes anim_circle-js {
-  to {
-    stroke-dashoffset: strokeDashoffset($porcent-js);
-  }
-}
-
-@keyframes anim_circle-ts {
-  to {
-    stroke-dashoffset: strokeDashoffset($porcent-ts);
-  }
-}
-
-@keyframes anim_circle-node {
-  to {
-    stroke-dashoffset: strokeDashoffset($porcent-node);
+    stroke-dashoffset: strokeDashoffset($porcent-python);
   }
 }
 
@@ -227,14 +240,42 @@ $porcent-vue: 2;
   }
 }
 
-@keyframes anim_circle-angular {
+@keyframes anim_circle-redux {
   to {
-    stroke-dashoffset: strokeDashoffset($porcent-angular);
+    stroke-dashoffset: strokeDashoffset($porcent-redux);
   }
 }
 
-@keyframes anim_circle-vue {
+@keyframes anim_circle-sass {
   to {
-    stroke-dashoffset: strokeDashoffset($porcent-vue);
+    stroke-dashoffset: strokeDashoffset($porcent-sass);
+  }
+}
+
+@keyframes anim_circle-bootstrap {
+  to {
+    stroke-dashoffset: strokeDashoffset($porcent-bootstrap);
+  }
+}
+
+@keyframes anim_circle-linux {
+  to {
+    stroke-dashoffset: strokeDashoffset($porcent-linux);
+  }
+}
+
+@keyframes anim_circle-postgresql {
+  to {
+    stroke-dashoffset: strokeDashoffset($porcent-postgresql);
+  }
+}
+@keyframes anim_circle-git {
+  to {
+    stroke-dashoffset: strokeDashoffset($porcent-git);
+  }
+}
+@keyframes anim_circle-github {
+  to {
+    stroke-dashoffset: strokeDashoffset($porcent-github);
   }
 }

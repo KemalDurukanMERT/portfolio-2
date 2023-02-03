@@ -1,5 +1,5 @@
 .MainHome-container {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   min-width: 90%;
   height: 100%;
   overflow-y: scroll;
@@ -53,7 +53,6 @@
 .about {
   min-height: 100%;
   width: 100%;
-  border: 3px solid green;
 }
 
 .resume {

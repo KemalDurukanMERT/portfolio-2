@@ -1,19 +1,6 @@
 import React from "react";
 import logo from "../../Assets/ibm-logo-white.png";
-import bootstrap from "../../Assets/bootstrap.png";
-import css from "../../Assets/css.png";
-import git from "../../Assets/git.png";
-import github from "../../Assets/github.png";
-import html from "../../Assets/html.png";
-import javascript from "../../Assets/javascript.png";
-import linux from "../../Assets/linux.png";
-import postgresql from "../../Assets/postgresql.png";
-import python from "../../Assets/python.png";
-import react from "../../Assets/react.png";
-import redux from "../../Assets/redux.png";
-import sass from "../../Assets/sass.png";
-
-
+import { data } from "../../helpers/data";
 
 const Resume = () => {
   return (
@@ -145,141 +132,44 @@ const Resume = () => {
           </div>
         </div>
       </div>
-      <div className="hard-skills">
+      <div className="hard-skills mt-5">
         <div className="line border border-danger"></div>
         <div className="certificates-header fs-4 text-secondary">
-          Certificates
+          Skills
         </div>
-        <div class="container-hard-skills">
-          <div class="container__progressbars">
-            <div class="progressbar">
-              <svg class="progressbar__svg">
-                <circle
-                  cx="80"
-                  cy="80"
-                  r="70"
-                  class="progressbar__svg-circle circle-html shadow-html"
-                >
-                  {" "}
-                </circle>
-              </svg>
-              <span class="progressbar__logo shadow-html"><img src={html} alt=""/></span>
-              <span class="progressbar__text shadow-html">HTML</span>
-            </div>
-
-            <div class="progressbar">
-              <svg class="progressbar__svg">
-                <circle
-                  cx="80"
-                  cy="80"
-                  r="70"
-                  class="progressbar__svg-circle circle-css shadow-css"
-                >
-                  {" "}
-                </circle>
-              </svg>
-              <span class="progressbar__logo shadow-css"><img src={css} alt=""/></span>
-              <span class="progressbar__text shadow-css">CSS</span>
-            </div>
-
-            <div class="progressbar">
-              <svg class="progressbar__svg">
-                <circle
-                  cx="80"
-                  cy="80"
-                  r="70"
-                  class="progressbar__svg-circle circle-scss shadow-scss"
-                >
-                  {" "}
-                </circle>
-              </svg>
-              <span class="progressbar__logo shadow-css"><img src={sass} alt="" /></span>
-              <span class="progressbar__text shadow-scss">SCSS</span>
-            </div>
-
-            <div class="progressbar">
-              <svg class="progressbar__svg">
-                <circle
-                  cx="80"
-                  cy="80"
-                  r="70"
-                  class="progressbar__svg-circle circle-js shadow-js"
-                >
-                  {" "}
-                </circle>
-              </svg>
-              <span class="progressbar__logo shadow-css"><img src={javascript} alt="" /></span>
-              <span class="progressbar__text shadow-js">JavaScript</span>
-            </div>
-
-            <div class="progressbar">
-              <svg class="progressbar__svg">
-                <circle
-                  cx="80"
-                  cy="80"
-                  r="70"
-                  class="progressbar__svg-circle circle-ts shadow-ts"
-                >
-                  {" "}
-                </circle>
-              </svg>
-              <span class="progressbar__text shadow-ts">TypeScript</span>
-            </div>
-
-            <div class="progressbar">
-              <svg class="progressbar__svg">
-                <circle
-                  cx="80"
-                  cy="80"
-                  r="70"
-                  class="progressbar__svg-circle circle-node shadow-node"
-                >
-                  {" "}
-                </circle>
-              </svg>
-              <span class="progressbar__text shadow-node">Node.js</span>
-            </div>
-
-            <div class="progressbar">
-              <svg class="progressbar__svg">
-                <circle
-                  cx="80"
-                  cy="80"
-                  r="70"
-                  class="progressbar__svg-circle circle-react shadow-react"
-                >
-                  {" "}
-                </circle>
-              </svg>
-              <span class="progressbar__logo shadow-css"><img src={react} alt="" /></span>
-              <span class="progressbar__text shadow-react">React.js</span>
-            </div>
-            <div class="progressbar">
-              <svg class="progressbar__svg">
-                <circle
-                  cx="80"
-                  cy="80"
-                  r="70"
-                  class="progressbar__svg-circle circle-angular shadow-angular"
-                >
-                  {" "}
-                </circle>
-              </svg>
-              <span class="progressbar__text shadow-angular">Angular.js</span>
-            </div>
-            <div class="progressbar">
-              <svg class="progressbar__svg">
-                <circle
-                  cx="80"
-                  cy="80"
-                  r="70"
-                  class="progressbar__svg-circle circle-vue shadow-vue"
-                >
-                  {" "}
-                </circle>
-              </svg>
-              <span class="progressbar__text shadow-vue">Vue.js</span>
-            </div>
+        <div className="container-hard-skills">
+          <div className="container__progressbars">
+            {data.map((skill, index) => {
+              return (
+                <div className="progressbar" key={index}>
+                  <svg className="progressbar__svg">
+                    <circle
+                      cx="80"
+                      cy="80"
+                      r="70"
+                      className={
+                        "progressbar__svg-circle circle-" +
+                        skill.name.toLowerCase() +
+                        " shadow-" +
+                        skill.name.toLowerCase()
+                      }
+                    >
+                      {console.log("progressbar__svg-circle circle-" +
+                        skill.name.toLowerCase() +
+                        " shadow-" +
+                        skill.name.toLowerCase())}
+                      {" "}
+                    </circle>
+                  </svg>
+                  <span className={"progressbar__logo shadow-" + skill.name.toLowerCase()}>
+                    <img src={skill.img} alt="" />
+                  </span>
+                  <span className={"progressbar__text shadow-" + skill.name.toLowerCase()}>
+                    {skill.name}
+                  </span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
