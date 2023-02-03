@@ -158,6 +158,23 @@
   .education, .experience{
     width: 100%;
   }
+
+  .certificate-cart{
+    width: 100%;
+  }
+
+  .certificate-logo img{
+    max-width: 80%;
+    min-width: 60px;
+  }
+}
+
+.language-area{
+  display: flex;
+  flex-wrap: wrap;
+}
+.language-cart{
+  width: 48%;
 }
 
 @media screen and (max-width: 600px) {
@@ -166,12 +183,19 @@
     flex-wrap: wrap;
     gap: 1rem;
   }
+
+  .language-cart{
+    width: 100%;
+  }
+
+  
 }
 
 @media screen and (max-width: 400px) {
   .resume{
     padding: 1rem;
   }
+
 }
 
 
