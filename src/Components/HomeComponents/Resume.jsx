@@ -184,7 +184,7 @@ const Resume = () => {
         <div className="container-soft-skills d-flex flex-wrap gap-3">
           {skills.map((skill, index) => {
             return (
-              <div className="container-skill">
+              <div className="container-skill" key={index}>
                 <label htmlFor={"skill" + index}>{skill}</label>
                 <div id={"skill" + index} className="Loading-skill"></div>
               </div>

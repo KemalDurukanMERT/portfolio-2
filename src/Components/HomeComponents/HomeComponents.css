@@ -233,6 +233,19 @@
   }
 }
 
+.language-area{
+  display: flex;
+  flex-wrap: wrap;
+}
+.language-cart{
+  width: 48%;
+}
+
+
+.contact{
+  margin: 4rem;
+}
+
 
 @media screen and (max-width: 1000px) {
   .education, .experience{
@@ -249,13 +262,7 @@
   }
 }
 
-.language-area{
-  display: flex;
-  flex-wrap: wrap;
-}
-.language-cart{
-  width: 48%;
-}
+
 
 @media screen and (max-width: 600px) {
   .sayhi {
@@ -266,6 +273,10 @@
 
   .language-cart{
     width: 100%;
+  }
+
+  .contact{
+    margin: 1rem;
   }
 
   

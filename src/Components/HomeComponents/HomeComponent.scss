@@ -293,3 +293,64 @@ $porcent-github: 90;
     animation: load 3s infinite;
   }
 }
+
+
+.mail-area{
+  border: 1px solid red;
+  position: relative;
+}
+.phone-side {
+  position: fixed;
+  width: 6rem;
+  height: 10rem;
+  bottom: 10px;
+  right: 10px;
+  .phone {
+    width: 100%;
+    height: 100%;
+    .phone-out {
+      width: 100%;
+      height: 100%;
+      border: 2px solid black;
+      border-radius: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background-color: black;
+      .phone-mic{
+        width: 30%;
+        height: 7%;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        background-color: grey;
+      }
+      .phone-screen{
+        width: 85%;
+        height: 75%;
+        background-color: white;
+        border: 1px solid black;
+      }
+      .phone-touch{
+        width: 21%;
+        height: 14%;
+        border-radius: 50%;
+        border: 1px solid black;
+        background-color: gray;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:800px) {
+  .phone-side{
+    width: 4rem;
+    height: 7rem;
+  }
+}
+@media screen and (max-width:400px) {
+  .phone-side{
+    width: 2rem;
+    height: 4rem;
+  }
+}
