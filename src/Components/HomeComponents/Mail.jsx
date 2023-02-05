@@ -1,8 +1,10 @@
+import { useState } from "react";
+
 const Mail = ({setFocus}) => {
   const handleSubmit = () => {
-    // e.preventDefault();
     setTimeout(() => setFocus(false), 3000);
   };
+  const [success, setSuccess] = useState(false);
   return (
     <div className="container">
       <h1>FormSubmit Demo</h1>
@@ -14,7 +16,7 @@ const Mail = ({setFocus}) => {
       >
         <input type="text" name="_honey" style={{display:"none"}} />
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://dazzling-torrone-287536.netlify.app/#contact/success" />
+        <input type="hidden" name="_next" value="https://dazzling-torrone-287536.netlify.app/#contact" />
         <div className="form-group">
           <div className="form-row">
             <div className="col">
@@ -47,9 +49,11 @@ const Mail = ({setFocus}) => {
             defaultValue={""}
           />
         </div>
-        <button type="submit" className="btn btn-lg btn-dark btn-block">
+        <button type="submit" className="btn btn-lg btn-dark btn-block" onClick={()=>{setSuccess(true)
+        setTimeout(setSuccess(false),3000)}}>
           Submit Form
         </button>
+        <div className="success-message" style={success ? {display:"block"} : {display:"none"}}>Mail Sended</div>
       </form>
     </div>
   );

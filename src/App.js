@@ -7,7 +7,7 @@ function App() {
   return (
     <Routes>
       <Route index to="/" element={<Home/>} />
-      <Route index to="/success" element={<Success/>}/>
+      <Route to="/success" element={<Success/>}/>
     </Routes>
   );
 }
