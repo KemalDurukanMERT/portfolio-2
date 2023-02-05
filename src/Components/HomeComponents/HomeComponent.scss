@@ -279,3 +279,17 @@ $porcent-github: 90;
     stroke-dashoffset: strokeDashoffset($porcent-github);
   }
 }
+
+.container-skill:hover {
+  animation: pulse 3s infinite;
+  .Loading-skill:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    animation: load 3s infinite;
+  }
+}

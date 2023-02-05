@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../Assets/ibm-logo-white.png";
 import { data } from "../../helpers/data";
+import { skills } from "../../helpers/data";
 
 const Resume = () => {
   return (
@@ -135,7 +136,7 @@ const Resume = () => {
       <div className="hard-skills mt-5">
         <div className="line border border-danger"></div>
         <div className="certificates-header fs-4 text-secondary">
-          Skills
+          Technical Skills
         </div>
         <div className="container-hard-skills">
           <div className="container__progressbars">
@@ -153,24 +154,42 @@ const Resume = () => {
                         " shadow-" +
                         skill.name.toLowerCase()
                       }
-                    >
-                      {console.log("progressbar__svg-circle circle-" +
-                        skill.name.toLowerCase() +
-                        " shadow-" +
-                        skill.name.toLowerCase())}
-                      {" "}
-                    </circle>
+                    ></circle>
                   </svg>
-                  <span className={"progressbar__logo shadow-" + skill.name.toLowerCase()}>
+                  <span
+                    className={
+                      "progressbar__logo shadow-" + skill.name.toLowerCase()
+                    }
+                  >
                     <img src={skill.img} alt="" />
                   </span>
-                  <span className={"progressbar__text shadow-" + skill.name.toLowerCase()}>
+                  <span
+                    className={
+                      "progressbar__text shadow-" + skill.name.toLowerCase()
+                    }
+                  >
                     {skill.name}
                   </span>
                 </div>
               );
             })}
           </div>
+        </div>
+      </div>
+      <div className="soft-skills mt-5">
+        <div className="line border border-danger"></div>
+        <div className="certificates-header fs-4 text-secondary">
+          Soft Skills
+        </div>
+        <div className="container-soft-skills d-flex flex-wrap gap-3">
+          {skills.map((skill, index) => {
+            return (
+              <div className="container-skill">
+                <label htmlFor={"skill" + index}>{skill}</label>
+                <div id={"skill" + index} className="Loading-skill"></div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

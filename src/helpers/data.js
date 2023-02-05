@@ -61,3 +61,6 @@ export const data = [
     img: github,
   },
 ];
+
+
+export const skills = "Analytical Thinking | Problem-Solving Abilities | Self-Motivated | Strong Communication | Project Management | Planning | Time Management | Adaptability | Continuous Learning | Collaboration & Teamwork | Multi-Task Management | Fast Learner | Resilience | Computational Thinking | Curious Approach | Self Discipline | Detailer | Open to Innovation".split(" |")
