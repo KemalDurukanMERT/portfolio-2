@@ -7,11 +7,14 @@ const Mail = ({setFocus}) => {
     <div className="container">
       <h1>FormSubmit Demo</h1>
       <form
-        target="_blank"
+        // target="_blank"
         action="https://formsubmit.co/c26da42eacb77d5add0d2e7163d80e0e"
         method="POST"
         onSubmit={handleSubmit}
       >
+        <input type="text" name="_honey" style={{display:"none"}} />
+        <input type="hidden" name="_captcha" value={false} />
+        <input type="hidden" name="_next" value={"https://dazzling-torrone-287536.netlify.app/#contact/success"} />
         <div className="form-group">
           <div className="form-row">
             <div className="col">
