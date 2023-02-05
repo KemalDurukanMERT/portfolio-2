@@ -13,8 +13,8 @@ const Mail = ({setFocus}) => {
         onSubmit={handleSubmit}
       >
         <input type="text" name="_honey" style={{display:"none"}} />
-        <input type="hidden" name="_captcha" value={false} />
-        <input type="hidden" name="_next" value={"https://dazzling-torrone-287536.netlify.app/#contact/success"} />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://dazzling-torrone-287536.netlify.app/#contact/success" />
         <div className="form-group">
           <div className="form-row">
             <div className="col">
