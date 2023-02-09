@@ -1,23 +1,26 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-const Mail = ({setFocus}) => {
+const Mail = ({ setFocus }) => {
   const handleSubmit = () => {
-    setTimeout(() => setFocus(false), 3000);
-    document.getElementById("contact").focus()
+    alert("Mail was sended succesfuly!")
+    // document.getElementById("contact").focus();
   };
-  const [success, setSuccess] = useState(false);
+  // const [success, setSuccess] = useState(false);
   return (
     <div className="container">
       <h1>FormSubmit Demo</h1>
       <form
-        // target="_blank"
         action="https://formsubmit.co/c26da42eacb77d5add0d2e7163d80e0e"
         method="POST"
         onSubmit={handleSubmit}
       >
-        <input type="text" name="_honey" style={{display:"none"}} />
+        <input type="text" name="_honey" style={{ display: "none" }} />
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://dazzling-torrone-287536.netlify.app/" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://dazzling-torrone-287536.netlify.app/"
+        />
         <div className="form-group">
           <div className="form-row">
             <div className="col">
@@ -50,15 +53,12 @@ const Mail = ({setFocus}) => {
             defaultValue={""}
           />
         </div>
-        <button type="submit" className="btn btn-lg btn-dark btn-block" onClick={()=>{setSuccess(true)
-        setTimeout(setSuccess(false),3000)}}>
+        <button type="submit" className="btn btn-lg btn-dark btn-block">
           Submit Form
         </button>
-        <div className="success-message" style={success ? {display:"block"} : {display:"none"}}>Mail Sended</div>
       </form>
     </div>
   );
 };
-
 
 export default Mail;
