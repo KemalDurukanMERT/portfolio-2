@@ -3,6 +3,7 @@ import { useState } from "react";
 const Mail = ({setFocus}) => {
   const handleSubmit = () => {
     setTimeout(() => setFocus(false), 3000);
+    document.getElementById("contact").focus()
   };
   const [success, setSuccess] = useState(false);
   return (
@@ -16,7 +17,7 @@ const Mail = ({setFocus}) => {
       >
         <input type="text" name="_honey" style={{display:"none"}} />
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://dazzling-torrone-287536.netlify.app/#contact" />
+        <input type="hidden" name="_next" value="https://dazzling-torrone-287536.netlify.app/" />
         <div className="form-group">
           <div className="form-row">
             <div className="col">
