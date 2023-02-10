@@ -10,33 +10,29 @@
   flex-direction: column;
 }
 
+.link-area{
+  display: flex;
+  flex-direction: column;
+}
 
 
-.intro a {
+.link-area a {
   color: white;
   margin: 16px;
   padding: 5px 15px;
   text-decoration: none;
 }
 
-.intro a:hover{
+.link-area a:hover{
     border-left: 2px solid red;
     color: white;
-}
-
-.intro a.active{
-  border-left: 2px solid red;
-  color: white;
 }
 
 .menu{
     align-self: flex-start;
 }
 
-.link-area{
-  display: flex;
-  flex-direction: column;
-}
+
 
 .contact-box{
     display: inline-block;

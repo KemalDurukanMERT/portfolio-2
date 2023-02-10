@@ -1,18 +1,19 @@
-// import { useState } from "react";
-
-const Mail = ({ setFocus }) => {
+const Mail = () => {
   const handleSubmit = () => {
-    alert("Mail was sended succesfuly!")
-    // document.getElementById("contact").focus();
+    alert("Mail was sended succesfuly!");
   };
-  // const [success, setSuccess] = useState(false);
   return (
-    <div className="container">
-      <h1>FormSubmit Demo</h1>
+    <div
+      className="container-mail"
+    >
+      <h1>
+        <i>Mail Me</i>
+      </h1>
       <form
         action="https://formsubmit.co/c26da42eacb77d5add0d2e7163d80e0e"
         method="POST"
         onSubmit={handleSubmit}
+        id="mailForm"
       >
         <input type="text" name="_honey" style={{ display: "none" }} />
         <input type="hidden" name="_captcha" value="false" />
@@ -23,8 +24,9 @@ const Mail = ({ setFocus }) => {
         />
         <div className="form-group">
           <div className="form-row">
-            <div className="col">
+            <div className="col mb-2">
               <input
+                id="fullName"
                 type="text"
                 name="name"
                 className="form-control"
@@ -54,7 +56,7 @@ const Mail = ({ setFocus }) => {
           />
         </div>
         <button type="submit" className="btn btn-lg btn-dark btn-block">
-          Submit Form
+          Send
         </button>
       </form>
     </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "../Assets/logo.png";
-import { FaGithubSquare } from "react-icons/fa";
-import { ImMail } from "react-icons/im";
-import { TfiLinkedin } from "react-icons/tfi";
+import { FaGithub } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { AiOutlineMenu } from "react-icons/ai";
 
@@ -15,9 +15,9 @@ const Intro = () => {
           <div className="menu-icon">
             <AiOutlineMenu />
           </div>
-          
+
           <div className="link-area">
-            <a href="#sayhi" >Home</a>
+            <a href="#sayhi">Home</a>
             <a href="#about">About</a>
             <a href="#resume">Resume</a>
             <a href="#projects">Projects</a>
@@ -27,13 +27,27 @@ const Intro = () => {
 
         <div className="contact-boxs">
           <div className="contact-box">
-            <FaGithubSquare />
+            <a
+              href="https://github.com/KemalDurukanMERT"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub />
+            </a>
           </div>
           <div className="contact-box">
-            <ImMail />
+            <a
+              href="https://www.linkedin.com/in/kemal-durukan-mert1/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin />
+            </a>
           </div>
           <div className="contact-box">
-            <TfiLinkedin />
+            <a href="#mailForm">
+              <AiOutlineMail />
+            </a>
           </div>
         </div>
       </div>

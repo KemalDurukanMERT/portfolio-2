@@ -294,10 +294,56 @@ $porcent-github: 90;
   }
 }
 
-
-.mail-area{
-  border: 1px solid red;
+.mail-area {
   position: relative;
+  min-height: 100%;
+  background: url("../../Assets/contact-walpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  // overflow-y: scroll;
+  .mail-form {
+    border: 5px solid white;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    max-height: 100%;
+    form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.5rem;
+      font-size: small;
+      max-height: 100%;
+      max-width: 100%;
+      color: white;
+      button {
+        font-size: small;
+        max-width: 80%;
+        align-self: center;
+      }
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: white;
+      opacity: 1;
+      font-style: italic;
+    }
+
+    h1 {
+      font-size: x-large;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-weight: 600;
+      color: wheat;
+    }
+    input,
+    textarea {
+      background-color: transparent;
+      color: white;
+    }
+  }
 }
 .phone-side {
   position: fixed;
@@ -318,20 +364,20 @@ $porcent-github: 90;
       align-items: center;
       justify-content: space-between;
       background-color: black;
-      .phone-mic{
+      .phone-mic {
         width: 30%;
         height: 7%;
         border: 1px solid black;
         border-radius: 0.5rem;
         background-color: grey;
       }
-      .phone-screen{
+      .phone-screen {
         width: 85%;
         height: 75%;
         background-color: white;
         border: 1px solid black;
       }
-      .phone-touch{
+      .phone-touch {
         width: 21%;
         height: 14%;
         border-radius: 50%;
@@ -342,14 +388,39 @@ $porcent-github: 90;
   }
 }
 
-@media screen and (max-width:800px) {
-  .phone-side{
+.contact-symbol {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  .contact-logo{
+    display: flex;
+    font-size: 200%;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: white;
+
+    a{
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .phone-side {
     width: 4rem;
     height: 7rem;
   }
 }
-@media screen and (max-width:400px) {
-  .phone-side{
+@media screen and (max-width: 400px) {
+  .phone-side {
     width: 2rem;
     height: 4rem;
   }
