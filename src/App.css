@@ -28,7 +28,7 @@
     color: white;
 }
 
-.menu{
+.menu-true, .menu-false{
     align-self: flex-start;
 }
 
@@ -96,6 +96,7 @@
     }
 
     .intro a {float: left;}
+
     .MainHome {margin-left: 0;
     padding: 0rem 1rem;}
     .contact-boxs{
@@ -112,7 +113,7 @@
         display: inline;
     }
 
-    .menu:hover .link-area{
+    .menu-true .link-area{
         display: flex;
         flex-direction: column;
     }

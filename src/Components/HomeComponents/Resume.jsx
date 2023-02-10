@@ -2,6 +2,10 @@ import React from "react";
 import logo from "../../Assets/ibm-logo-white.png";
 import { data } from "../../helpers/data";
 import { skills } from "../../helpers/data";
+import { education } from "../../helpers/data";
+import { experiences } from "../../helpers/data";
+import { TiArrowUnsorted } from "react-icons/ti";
+import { Accordion } from "react-bootstrap";
 
 const Resume = () => {
   return (
@@ -10,80 +14,78 @@ const Resume = () => {
       <div className="line border border-danger"></div>
       <div className="subtitle text-secondary fs-4">Education & Experience</div>
       <div className="experience-area">
-        <div className="education">
-          <div className="experience-cart">
-            <div className="experience-cart-date-area">
-              <div className="date1">2018</div>
-              <div className="area1">Middle East Technical University</div>
-            </div>
-            <div className="definition1">
-              <div className="definition-content">
-                <div className="definition1-title">Chemical Engineering</div>
-                <div className="definition1-main">
-                  Engineering discipline gained in an international area. Main
-                  significany of the department is multidiscipliner approach of
-                  it. Important effect on problem solving with different
-                  perspectives. Academic and social relations shaped the future
-                  carrier.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="experience-cart">
-            <div className="experience-cart-date-area">
-              <div className="date1">2022</div>
-              <div className="area1">
-                University of Economics and Human Science
-              </div>
-            </div>
-            <div className="definition1">
-              <div className="definition-content">
-                <div className="definition1-title">Computer Engineering</div>
-                <div className="definition1-main">
-                  High motivate to have an academic career in Computer Science.
-                  Beside the self-working, a professional education and an
-                  academic careeer in main area.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="experience">
-          <div className="experience-cart">
-            <div className="experience-cart-date-area">
-              <div className="date1">2020</div>
-              <div className="area1">Agarta Natural Cosmetics</div>
-            </div>
-            <div className="definition1">
-              <div className="definition-content">
-                <div className="definition1-title">Intern Engineer</div>
-                <div className="definition1-main">
-                  Development in the production process and control of the
-                  machines. Fast end effective solutions under critical
-                  situations.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="experience-cart">
-            <div className="experience-cart-date-area">
-              <div className="date1">2022</div>
-              <div className="area1">Clarusway</div>
-            </div>
-            <div className="definition1">
-              <div className="definition-content">
-                <div className="definition1-title">
-                  Front End Developer Trainee
-                </div>
-                <div className="definition1-main">
-                  Worked in an agile team of 7 members and provided responsive
-                  projects. Used SCRUM & Agile methodologies and JIRA while
-                  working on individual & group projects.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Accordion flush className="education" bsPrefix="education">
+          {education.map((sector, index) => {
+            return (
+              <Accordion.Item
+                eventKey={index}
+                className="experience-cart"
+                key={index}
+                bsPrefix="experience-cart"
+              >
+                <Accordion.Header
+                  className="cart-header1 d-flex justify-content-between"
+                  bsPrefix="cart-header1"
+                >
+                  <div>
+                    <div className="experience-cart-date-area">
+                      <div className="date1">{sector.year}</div>
+                      <div className="area1">{sector.area}</div>
+                    </div>
+                    <div className="definition1-title mt-3">{sector.title}</div>
+                  </div>
+                  <div className={`cart-button`}>
+                    <TiArrowUnsorted />
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body className="definition1">
+                  <div className="definition-content">
+                    <div className={`definition1-main text-light mt-2`}>
+                      {sector.definition}
+                    </div>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            );
+          })}
+        </Accordion>
+        <Accordion flush className="education" bsPrefix="education">
+          {experiences.map((sector, index) => {
+            return (
+              <Accordion.Item
+                flush
+                eventKey={index}
+                className="experience-cart"
+                key={index}
+                bsPrefix="experience-cart"
+              >
+                <Accordion.Header
+                  flush
+                  className="cart-header1 d-flex justify-content-between"
+                  bsPrefix="cart-header1"
+                >
+                  <div>
+                    <div className="experience-cart-date-area">
+                      <div className="date1">{sector.year}</div>
+                      <div className="area1">{sector.area}</div>
+                    </div>
+                    <div className="definition1-title mt-3">{sector.title}</div>
+                  </div>
+                  <div className={`cart-button`}>
+                    <TiArrowUnsorted />
+                  </div>
+                </Accordion.Header>
+                <Accordion.Body className="definition1">
+                  <div className="definition-content">
+                    <div className={`definition1-main text-light`}>
+                      {sector.definition}
+                    </div>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            );
+          })}
+        </Accordion>
       </div>
       <div className="certificates mt-5">
         <div className="line border border-danger"></div>

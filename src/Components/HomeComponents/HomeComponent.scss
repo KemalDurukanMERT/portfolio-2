@@ -1,13 +1,19 @@
 @use "sass:math";
-.experience-cart:hover {
-  .definition1-main {
-    display: block;
-  }
+
+.cart-button{
+  width: 5%;
+  font-size: 150%;
+  color: white;
+  position: absolute;
+  right: 0;
 }
+
+
 
 .experience-cart-date-area {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 0.5rem;
 }
 
 $color-black: hsl(0, 0%, 5%);

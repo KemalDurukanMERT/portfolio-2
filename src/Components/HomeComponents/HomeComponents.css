@@ -85,6 +85,7 @@
 }
 
 
+
 .date1 {
   margin-right: 0.5rem;
   background-color: #0D2426;
@@ -99,7 +100,7 @@
 
 .definition1 {
   height: 100%;
-  margin: 1rem;
+  /* margin: 1rem; */
 }
 
 
@@ -111,7 +112,8 @@
 
 .definition1-main{
   color: darkgray;
-  display: none;
+  padding: 0;
+  font-style: italic;
 }
 
 

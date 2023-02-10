@@ -63,4 +63,34 @@ export const data = [
 ];
 
 
-export const skills = "Analytical Thinking | Problem-Solving Abilities | Self-Motivated | Strong Communication | Project Management | Planning | Time Management | Adaptability | Continuous Learning | Collaboration & Teamwork | Multi-Task Management | Fast Learner | Resilience | Computational Thinking | Curious Approach | Self Discipline | Detailer | Open to Innovation".split(" |")
+export const skills = "Analytical Thinking | Problem-Solving Abilities | Self-Motivated | Strong Communication | Project Management | Planning | Time Management | Adaptability | Continuous Learning | Collaboration & Teamwork | Multi-Task Management | Fast Learner | Resilience | Computational Thinking | Curious Approach | Self Discipline | Detailer | Open to Innovation".split(" |");
+
+
+export const experiences = [
+  {
+    year: 2020,
+    area: "Agarta Natural Cosmetics",
+    title: "Intern Engineer",
+    definition: "Development in the production process and control of the machines. Fast end effective solutions under critical situations."
+  },
+  {
+    year: 2022,
+    area: "Clarusway",
+    title: "Front End Developer Trainee",
+    definition: "Worked in an agile team of 7 members and provided responsive projects. Used SCRUM & Agile methodologies and JIRA while working on individual & group projects."
+  },
+]
+export const education = [
+  {
+    year: 2018,
+    area: "Middle East Technical University",
+    title: "Chemical Engineering",
+    definition: "Engineering discipline gained in an international area. Main significany of the department is multidiscipliner approach of it. Important effect on problem solving with different perspectives. Academic and social relations shaped the future carrier."
+  },
+  {
+    year: 2022,
+    area: "University of Economics and Human Science",
+    title: "Computer Engineering",
+    definition: "High motivate to have an academic career in Computer Science. Beside the self-working, a professional education and an academic careeer in main area."
+  },
+]

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../Assets/logo.png";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
@@ -7,12 +7,14 @@ import { IconContext } from "react-icons";
 import { AiOutlineMenu } from "react-icons/ai";
 
 const Intro = () => {
+  const [menuIcon, setMenuIcon] = useState(false);
   return (
     <IconContext.Provider value={{ color: "white" }}>
       <div className="intro d-flex justify-content-between align-items-center p-4">
         <img src={logo} alt="" />
-        <div className="menu">
-          <div className="menu-icon">
+        <div className={`menu-${menuIcon}`}>
+          <div className={`menu-icon`} onClick={() => setMenuIcon(!menuIcon)}>
+            {/* {console.log(`menu-icon-${menuIcon}`)} */}
             <AiOutlineMenu />
           </div>
 
