@@ -1,8 +1,8 @@
 import React from "react";
-import { useLocation } from "react-router";
+// import { useLocation } from "react-router";
 
 const ProductDetail = () => {
-  const { state: person } = useLocation();
+  // const { state: person } = useLocation();
   return <div>ProductDetail</div>;
 };
 
