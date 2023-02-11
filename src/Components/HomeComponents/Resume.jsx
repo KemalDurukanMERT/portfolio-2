@@ -14,7 +14,7 @@ const Resume = () => {
       <div className="line border border-danger"></div>
       <div className="subtitle text-secondary fs-4">Education & Experience</div>
       <div className="experience-area">
-        <Accordion flush className="education" bsPrefix="education">
+        <Accordion className="education" bsPrefix="education">
           {education.map((sector, index) => {
             return (
               <Accordion.Item
@@ -49,18 +49,18 @@ const Resume = () => {
             );
           })}
         </Accordion>
-        <Accordion flush className="education" bsPrefix="education">
+        <Accordion className="education" bsPrefix="education">
           {experiences.map((sector, index) => {
             return (
               <Accordion.Item
-                flush
+          
                 eventKey={index}
                 className="experience-cart"
                 key={index}
                 bsPrefix="experience-cart"
               >
                 <Accordion.Header
-                  flush
+                
                   className="cart-header1 d-flex justify-content-between"
                   bsPrefix="cart-header1"
                 >
