@@ -1,14 +1,12 @@
 @use "sass:math";
 
-.cart-button{
+.cart-button {
   width: 5%;
   font-size: 150%;
   color: white;
   position: absolute;
   right: 0;
 }
-
-
 
 .experience-cart-date-area {
   display: flex;
@@ -332,7 +330,8 @@ $porcent-github: 90;
       }
     }
 
-    input::placeholder, textarea::placeholder {
+    input::placeholder,
+    textarea::placeholder {
       color: white;
       opacity: 1;
       font-style: italic;
@@ -340,7 +339,7 @@ $porcent-github: 90;
 
     h1 {
       font-size: x-large;
-      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-family: Georgia, "Times New Roman", Times, serif;
       font-weight: 600;
       color: wheat;
     }
@@ -400,7 +399,7 @@ $porcent-github: 90;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  .contact-logo{
+  .contact-logo {
     display: flex;
     font-size: 200%;
     justify-content: center;
@@ -410,11 +409,56 @@ $porcent-github: 90;
     border-radius: 1rem;
     background-color: white;
 
-    a{
+    a {
       display: flex;
       justify-content: center;
       text-decoration: none;
       color: black;
+    }
+  }
+}
+
+.projects {
+  margin: 4rem;
+  .project-area {
+    padding-top: 1rem;
+    .project {
+      position: relative;
+      width: 20rem;
+      height: 12rem;
+      background-color: #235758;
+      img {
+        display: block;
+        width: 100%;
+        object-fit: contain;
+      }
+      .define {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: 1s ease;
+        background-color: rgba(0, 0, 0, 0.4);
+        .define-title {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          white-space: nowrap;
+        }
+      }
+    }
+    .project:hover {
+      .define {
+        width: 100%;
+      }
     }
   }
 }

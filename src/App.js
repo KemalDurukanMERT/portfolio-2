@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router';
 import './App.css';
 import Home from './Pages/Home';
-import Success from './Pages/Success';
+import ProductDetail from './Pages/ProductDetail';
 
 function App() {
   return (
     <Routes>
       <Route index to="/" element={<Home/>} />
-      <Route to="/success" element={<Success/>}/>
+      <Route to="/:project" element={<ProductDetail/>}/>
     </Routes>
   );
 }

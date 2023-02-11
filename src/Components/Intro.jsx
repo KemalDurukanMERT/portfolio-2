@@ -22,7 +22,7 @@ const Intro = () => {
             <a href="#sayhi">Home</a>
             <a href="#about">About</a>
             <a href="#resume">Resume</a>
-            <a href="#projects">Projects</a>
+            <a href="#projects">Portfolio</a>
             <a href="#contact">Contact</a>
           </div>
         </div>
