@@ -420,13 +420,26 @@ $porcent-github: 90;
 
 .projects {
   margin: 4rem;
+  .portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
   .project-area {
     padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .project {
       position: relative;
-      width: 20rem;
+      width: 18rem;
       height: 12rem;
       background-color: #235758;
+      display: flex;
+      justify-content: center;
+      text-align: center;
       img {
         display: block;
         width: 100%;
@@ -467,6 +480,12 @@ $porcent-github: 90;
   .phone-side {
     width: 4rem;
     height: 7rem;
+  }
+
+  .projects{
+    margin: 1rem;
+    .project {
+    }
   }
 }
 @media screen and (max-width: 400px) {
