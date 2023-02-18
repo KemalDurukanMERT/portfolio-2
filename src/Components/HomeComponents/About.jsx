@@ -12,7 +12,7 @@ const About = () => {
         I have a 3 years experience in IT and web development area. My
         experience covers a wide variety of project scopes especially in
         front-end side. I have a strong knowledge on HTML, CSS, JavaScript and
-        framworks and libraries of them such as React. On the other hand, I'm
+        frameworks and libraries of them such as React. On the other hand, I'm
         excited to learn new things and improve, lifetime student.
       </div>
     </div>
