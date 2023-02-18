@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router";
 import scandiweb from "../../Assets/preview.gif";
 import tourPlaces from "../../Assets/preview-tour.gif";
+import languages from "../../Assets/preview-language.gif";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -36,6 +37,22 @@ const Projects = () => {
                 <div
                   className="btn btn-success"
                   onClick={() => navigate("/tour-places", {})}
+                >
+                  View
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="project-area">
+          <div className="project">
+            <img src={languages} alt="" />
+            <div className="define text-center">
+              <div className="define-title">
+                <div>Language Card</div>
+                <div
+                  className="btn btn-success"
+                  onClick={() => navigate("/language-card", {})}
                 >
                   View
                 </div>
