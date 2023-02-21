@@ -8,9 +8,7 @@ const SayHi = () => {
     <div className="sayhi" id="sayhi">
       <div className="left">
         <div className="hello text-danger fs-5">Hi, I'm</div>
-        <div className="name fs-1 fw-bold">
-          Kemal Durukan <span className="d-block">MERT</span>
-        </div>
+        <div className="name type">Kemal Durukan MERT</div>
         <div className="line border border-danger"></div>
         <div className="title text-dark mb-3">Full Stack Developer</div>
         <div className="buttons d-flex flex-wrap gap-1">

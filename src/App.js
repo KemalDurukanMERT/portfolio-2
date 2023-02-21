@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router';
 import './App.css';
 import Home from './Pages/Home';
-import ProductDetail from './Pages/ProductDetail';
+import ProjectDetail from './Pages/ProjectDetail/ProjectDetail';
 
 function App() {
   return (
     <Routes>
-      <Route index to="/" element={<Home/>} />
-      <Route to="/:project" element={<ProductDetail/>}/>
+      <Route index path="/" element={<Home/>} />
+      <Route path="/:project" element={<ProjectDetail/>}/>
     </Routes>
   );
 }
