@@ -13,6 +13,7 @@ import github from "../Assets/github.png";
 import scandiweb from "../Assets/preview.gif";
 import tourPlaces from "../Assets/preview-tour.gif";
 import languages from "../Assets/preview-language.gif";
+import recipe from "../Assets/preview-recipe.gif";
 import graphql from "../Assets/graphql.png";
 import apollographql from "../Assets/apollographql.png";
 
@@ -136,7 +137,8 @@ export const projects = [
     id: tourPlaces,
     title: "Tour Places",
     navto: "tour-places",
-    explanation: "In this project, the goal is to make a one-page website that supports variable card structures in Bootstrap format with images and descriptions.",
+    explanation:
+      "In this project, the goal is to make a one-page website that supports variable card structures in Bootstrap format with images and descriptions.",
     usedTools: [
       [react, "React"],
       [html, "HTML"],
@@ -151,7 +153,8 @@ export const projects = [
     id: languages,
     title: "Language Card",
     navto: "language-cards",
-    explanation: "In this project, the goal is to make a information page about programing languages with fetching data from an open source API.",
+    explanation:
+      "In this project, the goal is to make a information page about programing languages with fetching data from an open source API.",
     usedTools: [
       [react, "React"],
       [html, "HTML"],
@@ -161,5 +164,20 @@ export const projects = [
     ],
     sourceCode: "https://github.com/KemalDurukanMERT/Language-Cards",
     liveServer: "https://cozy-scone-6e106b.netlify.app/",
+  },
+  {
+    id: recipe,
+    title: "Recipe App",
+    navto: "recipe-app",
+    explanation:
+      "In this project, the goal is a multiple page design with using the structure of Client Side Server. First of all Log-in page comes to the user. After the Log-in, the user page opens. Here, by accessing the food-app application, user can search the foods by selecting different meals of the day. By clicking on the food he chooses from the menu that will appear in front of him, he can access the food image, information about the ingredients and nutritional values. In addition, the user's Github link has also been added to the main page and is accessible. Skills/Tools: Axios 3rd party library for data fetching, styled-components of React.js, hooks for function based components (useEffect, useState) HTML, CSS, JS, React.js. ",
+    usedTools: [
+      [react, "React"],
+      [html, "HTML"],
+      [css, "CSS"],
+      [javascript, "JavaScript"],
+    ],
+    sourceCode: "https://github.com/KemalDurukanMERT/Recipe-App",
+    liveServer: "https://spiffy-jalebi-b50900.netlify.app/",
   },
 ];
