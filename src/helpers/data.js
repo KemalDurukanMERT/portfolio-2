@@ -14,6 +14,8 @@ import scandiweb from "../Assets/preview.gif";
 import tourPlaces from "../Assets/preview-tour.gif";
 import languages from "../Assets/preview-language.gif";
 import recipe from "../Assets/preview-recipe.gif";
+import typescript from "../Assets/preview-typescript.gif";
+import typescriptlogo from "../Assets/typescript.png";
 import graphql from "../Assets/graphql.png";
 import apollographql from "../Assets/apollographql.png";
 
@@ -29,6 +31,10 @@ export const data = [
   {
     name: "CSS",
     img: css,
+  },
+  {
+    name: "TypeScript",
+    img: typescriptlogo,
   },
   {
     name: "Python",
@@ -179,5 +185,20 @@ export const projects = [
     ],
     sourceCode: "https://github.com/KemalDurukanMERT/Recipe-App",
     liveServer: "https://spiffy-jalebi-b50900.netlify.app/",
+  },
+  {
+    id: typescript,
+    title: "ToDo App with TypeScript",
+    navto: "todo-app-typescript",
+    explanation:
+      "A Todo App Project with TypeScript is a web application that helps users create and manage tasks. TypeScript is used to handle the logic and data management of the application, making it easier to maintain and extend. The project involves setting up a development environment, creating a user interface with React, HTML and CSS, and implementing features such as task creation and deletion.",
+    usedTools: [
+      [react, "React"],
+      [html, "HTML"],
+      [css, "CSS"],
+      [typescriptlogo, "TypeScript"],
+    ],
+    sourceCode: "https://github.com/KemalDurukanMERT/To-Do-TypeScript-",
+    liveServer: "https://darling-cuchufli-9d2a0c.netlify.app/",
   },
 ];

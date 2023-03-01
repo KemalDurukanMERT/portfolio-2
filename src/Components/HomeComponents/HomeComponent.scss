@@ -26,6 +26,7 @@ $color-redux: hsl(110, 100%, 60%);
 $color-sass: hsl(300, 100%, 60%);
 $color-bootstrap: hsl(0, 100%, 60%);
 $color-linux: hsl(145, 100%, 60%);
+$color-typescript: hsl(145, 100%, 60%);
 $color-postgresql: hsl(110, 100%, 60%);
 $color-git: hsl(220, 100%, 60%);
 $color-github: hsl(300, 100%, 60%);
@@ -46,6 +47,7 @@ $porcent-git: 70;
 $porcent-github: 90;
 $porcent-graphql: 50;
 $porcent-apollographql: 50;
+$porcent-typescript: 70;
 
 @function strokeDashoffset($num) {
   @return math.div(440 * (100-$num), 100);
@@ -143,6 +145,9 @@ $porcent-apollographql: 50;
   &-apollographql {
     filter: drop-shadow(0 0 5px $color-apollographql);
   }
+  &-typescript {
+    filter: drop-shadow(0 0 5px $color-typescript);
+  }
 }
 
 .progressbar__logo {
@@ -212,6 +217,9 @@ $porcent-apollographql: 50;
     }
     &-apollographql {
       animation: anim_circle-apollographql 1s ease-in-out forwards;
+    }
+    &-typescript {
+      animation: anim_circle-typescript 1s ease-in-out forwards;
     }
   }
 }
@@ -307,6 +315,11 @@ $porcent-apollographql: 50;
 @keyframes anim_circle-apollographql {
   to {
     stroke-dashoffset: strokeDashoffset($porcent-apollographql);
+  }
+}
+@keyframes anim_circle-typescript {
+  to {
+    stroke-dashoffset: strokeDashoffset($porcent-typescript);
   }
 }
 
