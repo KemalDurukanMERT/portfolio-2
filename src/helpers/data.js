@@ -15,6 +15,7 @@ import tourPlaces from "../Assets/preview-tour.gif";
 import languages from "../Assets/preview-language.gif";
 import recipe from "../Assets/preview-recipe.gif";
 import typescript from "../Assets/preview-typescript.gif";
+import weather from "../Assets/preview-weather.gif";
 import typescriptlogo from "../Assets/typescript.png";
 import graphql from "../Assets/graphql.png";
 import apollographql from "../Assets/apollographql.png";
@@ -200,5 +201,19 @@ export const projects = [
     ],
     sourceCode: "https://github.com/KemalDurukanMERT/To-Do-TypeScript-",
     liveServer: "https://darling-cuchufli-9d2a0c.netlify.app/",
+  },
+  {
+    id: weather,
+    title: "Weather App",
+    navto: "weather-app",
+    explanation:
+      "The purpose of this project is to make a weather application using the https://api.openweathermap.org api.It is to bring and display the weather conditions of the location desired by the user. Skills/Tools : Async await methods.",
+    usedTools: [
+      [html, "HTML"],
+      [css, "CSS"],
+      [javascript, "JavaScript"],
+    ],
+    sourceCode: "https://github.com/KemalDurukanMERT/Weather-App",
+    liveServer: "https://teal-bunny-b36a72.netlify.app/",
   },
 ];
