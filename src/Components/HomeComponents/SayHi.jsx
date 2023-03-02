@@ -18,7 +18,7 @@ const SayHi = () => {
             </a>
           </Button>
           <Button variant="dark" className="button">
-            <a href="#portfolio">View Portfolio</a>
+            <a href="#projects">View Portfolio</a>
           </Button>
         </div>
       </div>

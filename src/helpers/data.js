@@ -18,6 +18,7 @@ import typescript from "../Assets/preview-typescript.gif";
 import weather from "../Assets/preview-weather.gif";
 import typescriptlogo from "../Assets/typescript.png";
 import graphql from "../Assets/graphql.png";
+import docker from "../Assets/docker.png";
 import apollographql from "../Assets/apollographql.png";
 
 export const data = [
@@ -48,6 +49,10 @@ export const data = [
   {
     name: "Redux",
     img: redux,
+  },
+  {
+    name: "Docker",
+    img: docker,
   },
   {
     name: "SASS",

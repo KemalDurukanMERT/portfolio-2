@@ -18,6 +18,10 @@
   padding: 1rem 0;
 }
 
+.sayhi Button a:hover{
+  color: inherit;
+}
+
 .line {
   margin: 1rem 0;
   width: 20%;
@@ -39,7 +43,7 @@
 }
 
 .sayhi .left {
-  margin-left: 1rem;
+  margin-left: 3rem;
   max-width: 50%;
 }
 

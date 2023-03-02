@@ -20,6 +20,7 @@ $color-color: hsl(0, 0%, 100%);
 $color-javascript: hsl(60, 100%, 60%);
 $color-html: hsl(15, 100%, 60%);
 $color-css: hsl(200, 100%, 60%);
+$color-docker: hsl(200, 100%, 60%);
 $color-python: hsl(220, 100%, 60%);
 $color-react: hsl(180, 100%, 60%);
 $color-redux: hsl(110, 100%, 60%);
@@ -46,6 +47,7 @@ $porcent-postgresql: 70;
 $porcent-git: 70;
 $porcent-github: 90;
 $porcent-graphql: 50;
+$porcent-docker: 50;
 $porcent-apollographql: 50;
 $porcent-typescript: 70;
 
@@ -148,6 +150,9 @@ $porcent-typescript: 70;
   &-typescript {
     filter: drop-shadow(0 0 5px $color-typescript);
   }
+  &-docker {
+    filter: drop-shadow(0 0 5px $color-docker);
+  }
 }
 
 .progressbar__logo {
@@ -220,6 +225,9 @@ $porcent-typescript: 70;
     }
     &-typescript {
       animation: anim_circle-typescript 1s ease-in-out forwards;
+    }
+    &-docker {
+      animation: anim_circle-docker 1s ease-in-out forwards;
     }
   }
 }
@@ -320,6 +328,11 @@ $porcent-typescript: 70;
 @keyframes anim_circle-typescript {
   to {
     stroke-dashoffset: strokeDashoffset($porcent-typescript);
+  }
+}
+@keyframes anim_circle-docker {
+  to {
+    stroke-dashoffset: strokeDashoffset($porcent-docker);
   }
 }
 
